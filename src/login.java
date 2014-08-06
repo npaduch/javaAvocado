@@ -73,9 +73,7 @@ public class login extends JFrame implements ActionListener{
 		if(action.getActionCommand().equals("Login")){
 		    AvocadoSignTest signTest = new AvocadoSignTest();
 		    AvocadoSignTest.AuthClient authClient = signTest.new AuthClient();
-			String tempe = "n.paduch1@gmail.com";
-			char tempp[] = {'l','a','u','r','e','n','n','o','l','a','n'};
-		    //authClient.setCredentials(email.getText(),password.getPassword());
+		    authClient.setCredentials(email.getText(),password.getPassword());
 		    authClient.setCredentials(tempe, tempp);
 		    AvocadoSignTest.AvocadoAPI api = signTest.new AvocadoAPI(authClient);
 		    api.updateFromCommandLine();

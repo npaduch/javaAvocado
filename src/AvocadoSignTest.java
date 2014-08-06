@@ -303,8 +303,8 @@ public class AvocadoSignTest {
 		private String cookie = null;
 
 		public AuthClient() {
-			this.devId = 81;
-			this.devKey = "7UZiE6na8htEm1f2HhqimSQyX213pgmQjEvxiGnvpzccvE+GDiMrZ/1v9RlfPKFY";
+			this.devId = <insert developer ID here>;
+			this.devKey = "<insert developer key here>";
 		}
 
 		public void setCredentials(String e, char[] p){
